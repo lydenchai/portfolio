@@ -14,10 +14,12 @@ html {
 }
 
 body {
-  color: #636b6f;
   background: #e8e8e8;
   overflow-y: auto;
   overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  line-height: 20px;
 
   &::-webkit-scrollbar {
     width: 0.8rem;
