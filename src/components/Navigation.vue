@@ -1,54 +1,62 @@
 <template>
-  <div class="text-2xl w-full">
-    <van-sticky>
-      <nav
-        id="menu"
-        class="navbar navbar-inverse navbar-static-top h-[40px] bg-[#9b939467] px-[4%] lg:px-[6%] md:px-0% flex items-center justify-between"
-      >
+  <div id="navbar" class="h-[55px] px-[4%] py-4 md:px-2% flex w-full">
+    <div class="flex justify-between">
+      <li class="flex items-center">
+        <RouterLink to=""> Lyden CHAI </RouterLink>
+      </li>
+      <ul class="flex gap-5">
         <li class="h-full grid items-center">
-          <RouterLink to=""> Lyden CHAI </RouterLink>
+          <RouterLink to="/"> Works </RouterLink>
         </li>
-        <ul class="h-full">
-          <li class="h-full grid items-center">
-            <RouterLink to="/"> Works </RouterLink>
-          </li>
-          <li id="entertainment" class="category">
-            <RouterLink to="/about" class="font-semibold"> About </RouterLink>
-          </li>
-          <li id="entertainment" class="category">
-            <RouterLink to="/resume" class="font-semibold"> Resume </RouterLink>
-          </li>
-        </ul>
-      </nav>
-    </van-sticky>
+        <li class="h-full grid items-center">
+          <RouterLink to="/about" class=""> About </RouterLink>
+        </li>
+        <li class="h-full grid items-center">
+          <RouterLink to="/resume" class=""> Resume </RouterLink>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+};
+</script>
 
 <style lang="scss" scoped>
-a.router-link-exact-active {
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-
-a:hover {
-  color: #fff;
-  transition: 0.3s;
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.5s;
+  box-shadow: none;
+  backdrop-filter: blur(10px);
 }
 
 ul > li > a {
-  height: 40px;
+  display: block;
+  color: #676767;
+  line-height: 2px;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  padding: 5px 13px;
-  position: relative;
-  text-decoration: none;
-  display: grid;
-  place-items: center;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
 }
-
-nav > ul > li {
-  float: left;
+a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+a:active,
+a:hover {
+  outline: 0;
 }
 </style>
