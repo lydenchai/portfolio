@@ -1,26 +1,21 @@
 <template>
   <div class="">
     <div class="img-container relative">
-      <img
-        src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
-        alt="Avatar"
-        class="image"
-      />
+      <img src="../assets/imgs/Reports.svg" alt="Avatar" class="image" />
       <div class="overlay">
         <div class="text">Hello World</div>
       </div>
     </div>
     <div class="flex items-center mt-[15px] md:flex-col md:items-start">
-      <h2 class="heading-project md:mb-2">TikTok - Effect House</h2>
+      <h2 class="heading-project md:mb-2">Rental Management System</h2>
       <p class="tag-for-projects mt-[3px] ml-[20px] md:ml-0">
-        User Experience / 3D Code-based Desktop Software / Augmented Reality
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit
+        eaque.
       </p>
     </div>
   </div>
 </template>
-
 <script setup lang="ts"></script>
-
 <style lang="scss" scoped>
 .heading-project {
   font-family: "Open Sans", sans-serif;

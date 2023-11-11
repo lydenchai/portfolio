@@ -1,7 +1,11 @@
 <template>
-  <div class="w-full h-auto mb-[25px]">
-    <div class="intro mt-[30px] mb-[60px] h-auto">
-      <h1 class="text-block-for-intro text-[28px] md:text-[20px] h-auto w-full">
+  <div
+    class="w-full h-auto mt-[55px] mb-[25px] px-[20.5%] lg:px-[6%] md:px-[3%]"
+  >
+    <div class="intro mt-[30px] mb-[60px] md:mb-[30px] h-auto">
+      <h1
+        class="text-block-for-intro text-[28px] leading-[55px] md:leading-[40px] sm:leading-[30px] md:text-[20px] w-full"
+      >
         Hello! I am a
         <span class="text-[#416bd8] font-bold">Front End Developer</span> who
         enjoys crafting experiences that empower users. I am now working at
@@ -10,7 +14,9 @@
         </a>
         front end team
       </h1>
-      <h3 class="text-block-for-intro02 mt-3 text-[16px] md:text-[14px]">
+      <h3
+        class="text-block-for-intro02 mt-[20px] md:mt-[10px] text-[16px] md:text-[14px]"
+      >
         Bachelor's degree in Computer Science at
         <a href="https://www.aeu.edu.kh/" target="_blank">
           <span class="text-[#416bd8] font-bold cursor-pointer">
@@ -18,7 +24,9 @@
           </span>
         </a>
       </h3>
-      <h3 class="text-block-for-intro02 mt-3 text-[16px] md:text-[14px]">
+      <h3
+        class="text-block-for-intro02 mt-[20px] md:mt-[10px] text-[16px] md:text-[14px]"
+      >
         I previously internship at
         <a href="https://poscardigital.com/" target="_blank">
           <span class="text-[#416bd8] font-bold cursor-pointer">
@@ -26,10 +34,17 @@
           </span>
         </a>
       </h3>
-      <div class="mt-[50px] flex items-center gap-4">
+      <div class="mt-[50px] md:mt-[30px] flex items-center gap-4">
         <a href="mailto:lyden.chai@gmail.com" target="_blank">
           <img
             src="https://uploads-ssl.webflow.com/611e891b6b88d2aae555b967/6222197c3b4bae024f0b223e_01%20mail%202x.png"
+            alt=""
+            width="25"
+          />
+        </a>
+        <a href="https://www.instagram.com/denchai_sewatanont" target="_blank">
+          <img
+            src="https://www.svgrepo.com/show/521711/instagram.svg"
             alt=""
             width="25"
           />
@@ -41,19 +56,29 @@
             width="25"
           />
         </a>
+        <a href="https://github.com/lydenchai" target="_blank">
+          <img
+            src="https://www.svgrepo.com/show/512317/github-142.svg"
+            alt=""
+            width="25"
+          />
+        </a>
       </div>
     </div>
     <div class="projects">
-      <div class="w-full h-auto mt-[50px]">
+      <div class="w-full h-auto mt-[50px] md:mt-[30px]">
         <Project />
       </div>
-      <div class="w-full h-auto mt-[50px]">
+      <div class="w-full h-auto mt-[50px] md:mt-[30px]">
         <Project />
       </div>
       <!-- other projects -->
       <div class="w-full h-auto mt-[50px]">
         <h1 class="other-project-title">Other Projects</h1>
-        <div class="w-full h-auto relative mt-[25px]">
+        <div class="w-full h-auto mt-[25px] md:mt-[15px]">
+          <Project />
+        </div>
+        <div class="w-full h-auto mt-[50px] md:mt-[30px]">
           <Project />
         </div>
       </div>
@@ -72,10 +97,8 @@ import Footer from "../components/Footer.vue";
 <style lang="scss" scoped>
 .text-block-for-intro {
   max-width: 100%;
-  margin-bottom: 25px;
   font-family: "Lato", sans-serif;
   color: #676767;
-  line-height: 55px;
   font-weight: 400;
   letter-spacing: 0.3px;
 }
