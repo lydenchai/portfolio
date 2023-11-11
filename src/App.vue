@@ -7,7 +7,7 @@ import Navigation from "./components/Navigation.vue";
   <div>
     <Navigation />
     <div class="px-[20.5%] lg:px-[6%] md:px-0">
-      <RouterView />
+      <RouterView class="mt-[55px]" />
     </div>
   </div>
 </template>
