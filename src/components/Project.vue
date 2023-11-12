@@ -1,21 +1,22 @@
 <template>
   <div class="">
     <div class="img-container relative">
-      <img src="../assets/imgs/Reports.svg" alt="Avatar" class="image" />
+      <img :src="project.image" alt="" class="image" />
       <div class="overlay">
         <div class="text">Hello World</div>
       </div>
     </div>
     <div class="flex items-center mt-[15px] md:flex-col md:items-start">
-      <h2 class="heading-project md:mb-2">Rental Management System</h2>
+      <h2 class="heading-project md:mb-2">{{ project.name }}</h2>
       <p class="tag-for-projects mt-[3px] ml-[20px] md:ml-0">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit
-        eaque.
+        {{ project.description }}
       </p>
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps<{ project: any }>();
+</script>
 <style lang="scss" scoped>
 .heading-project {
   font-family: "Open Sans", sans-serif;

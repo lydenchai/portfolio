@@ -12,7 +12,9 @@
           <RouterLink to="/about" class=""> About </RouterLink>
         </li>
         <li class="h-full grid items-center">
-          <RouterLink to="/resume" class=""> Resume </RouterLink>
+          <RouterLink to="/resume" href="" download class="">
+            Resume
+          </RouterLink>
         </li>
       </ul>
     </div>
@@ -21,15 +23,17 @@
 
 <script setup>
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0px";
+let prevScrollPos = window.pageYOffset;
+window.addEventListener("scroll", function () {
+  let currentScrollPos = window.pageYOffset;
+  let navbar = document.getElementById("navbar");
+  if (prevScrollPos > currentScrollPos) {
+    navbar.style.top = "0px";
   } else {
-    document.getElementById("navbar").style.top = "-55px";
+    navbar.style.top = "-55px";
   }
-  prevScrollpos = currentScrollPos;
-};
+  prevScrollPos = currentScrollPos;
+});
 </script>
 
 <style lang="scss" scoped>

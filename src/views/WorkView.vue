@@ -66,20 +66,21 @@
       </div>
     </div>
     <div class="projects">
-      <div class="w-full h-auto mt-[50px] md:mt-[30px]">
-        <Project />
+      <div
+        class="w-full h-auto mt-[50px] md:mt-[30px]"
+        v-for="project in projects"
+        :key="project"
+      >
+        <Project :project="project" />
       </div>
-      <div class="w-full h-auto mt-[50px] md:mt-[30px]">
-        <Project />
-      </div>
-      <!-- other projects -->
       <div class="w-full h-auto mt-[50px]">
-        <h1 class="other-project-title">Other Projects</h1>
-        <div class="w-full h-auto mt-[25px] md:mt-[15px]">
-          <Project />
-        </div>
-        <div class="w-full h-auto mt-[50px] md:mt-[30px]">
-          <Project />
+        <h1 class="other-project-title mb-[25px]">Other Projects</h1>
+        <div
+          class="w-full h-auto md:mt-[15px] mb-[50px]"
+          v-for="project in otherProjects"
+          :key="project"
+        >
+          <Project :project="project" />
         </div>
       </div>
     </div>
@@ -92,6 +93,34 @@
 <script setup lang="ts">
 import Project from "../components/Project.vue";
 import Footer from "../components/Footer.vue";
+const projects: any[] = [
+  {
+    name: "Rental Management System",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
+    image: "",
+  },
+  {
+    name: "KAS-PORTAL",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
+    image: "",
+  },
+  {
+    name: "Travona Hotel Room",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
+    image: "",
+  },
+];
+const otherProjects: any[] = [
+  {
+    name: "Travona mini app",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
+    image: "",
+  },
+];
 </script>
 
 <style lang="scss" scoped>
