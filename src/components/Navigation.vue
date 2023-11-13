@@ -2,17 +2,21 @@
   <div id="navbar" class="h-[55px] px-[4%] py-4 md:px-[5%] flex w-full">
     <div class="flex justify-between">
       <li class="flex items-center">
-        <RouterLink to="#"> Lyden CHAI </RouterLink>
+        <RouterLink to="#" class="text-[14px]"> Lyden CHAI </RouterLink>
       </li>
       <ul class="flex gap-5">
         <li class="h-full grid items-center">
-          <RouterLink to="/"> Works </RouterLink>
+          <RouterLink to="/" class="text-[14px]"> Works </RouterLink>
         </li>
         <li class="h-full grid items-center">
-          <RouterLink to="/about" class=""> About </RouterLink>
+          <RouterLink to="/about" class="text-[14px]"> About </RouterLink>
         </li>
         <li class="h-full grid items-center">
-          <a href="resume.pdf" onclick="window.location.href('resume.pdf');">
+          <a
+            href="resume.pdf"
+            onclick="window.location.href('resume.pdf');"
+            class="text-[14px]"
+          >
             Resume
           </a>
         </li>
@@ -53,13 +57,14 @@ ul > li > a {
   color: #676767;
   line-height: 2px;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
   font-weight: 700;
 }
+
 ul > li > a:hover {
   text-decoration: underline;
   transition: 0.3s;
 }
+
 ul > li > a:active,
 ul > li > a:hover {
   outline: 0;
