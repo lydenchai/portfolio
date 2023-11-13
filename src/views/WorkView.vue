@@ -91,25 +91,36 @@
 </template>
 
 <script setup lang="ts">
-import Project from "../components/Project.vue";
 import Footer from "../components/Footer.vue";
 const projects: any[] = [
   {
     name: "Rental Management System",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
+    details: {
+      title: "title",
+      description: "description",
+    },
     image: "",
   },
   {
     name: "KAS-PORTAL",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
+    details: {
+      title: "title",
+      description: "description",
+    },
     image: "",
   },
   {
     name: "Travona Hotel Room",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
+    details: {
+      title: "title",
+      description: "description",
+    },
     image: "",
   },
 ];
@@ -118,6 +129,10 @@ const otherProjects: any[] = [
     name: "Travona mini app",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
+    details: {
+      title: "title",
+      description: "description",
+    },
     image: "",
   },
 ];

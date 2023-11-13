@@ -1,9 +1,12 @@
 <template>
-  <div class="">
+  <div class="w-full h-auto">
     <div class="img-container relative">
       <img :src="project.image" alt="" class="image" />
       <div class="overlay">
-        <div class="text">Hello World</div>
+        <div class="text">
+          <h1>{{ project?.details?.title }}</h1>
+          <p>{{ project?.details.description }}</p>
+        </div>
       </div>
     </div>
     <div class="flex items-center mt-[15px] md:flex-col md:items-start">
@@ -15,7 +18,19 @@
   </div>
 </template>
 <script setup lang="ts">
-const props = defineProps<{ project: any }>();
+interface Project {
+  name: string;
+  description: string;
+  details?: Details;
+  image: any;
+}
+interface Details {
+  title: string;
+  description: string;
+}
+const props = defineProps<{
+  project: Project;
+}>();
 </script>
 <style lang="scss" scoped>
 .heading-project {
