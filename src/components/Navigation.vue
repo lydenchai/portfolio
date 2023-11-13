@@ -12,9 +12,9 @@
           <RouterLink to="/about" class=""> About </RouterLink>
         </li>
         <li class="h-full grid items-center">
-          <RouterLink to="/resume" href="" download class="">
+          <a href="resume.pdf" onclick="window.location.href('resume.pdf');">
             Resume
-          </RouterLink>
+          </a>
         </li>
       </ul>
     </div>
