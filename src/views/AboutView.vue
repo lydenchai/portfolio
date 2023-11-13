@@ -1,7 +1,7 @@
 <template>
   <div class="w-full text-[#444444]">
     <div
-      class="h-[100vh] md:h-auto w-full md:mt-[55px] flex justify-between items-center sm:flex-col md:mb-[50px] px-[20.5%] lg:px-[6%] md:px-[3%]"
+      class="h-[100vh] md:h-auto w-full md:mt-[55px] flex justify-between items-center sm:flex-col md:mb-[50px] px-[20.5%] lg:px-[10%] md:px-[5%]"
     >
       <div class="w-[40%] sm:hidden">
         <img src="../assets/imgs/Photos.jpg" alt="Avatar" class="w-[80%]" />
@@ -37,7 +37,7 @@
       </div>
     </div>
     <div
-      class="px-[20.5%] lg:px-[6%] md:px-[3%] w-full h-auto bg-[#dadada] py-[60px]"
+      class="px-[20.5%] lg:px-[10%] md:px-[5%] w-full h-auto bg-[#dadada] py-[60px]"
     >
       <div class="experience-box">
         <h2 class="heading-3 text-[22px] md:text-[18px]">education</h2>

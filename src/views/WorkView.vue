@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full h-auto mt-[55px] mb-[25px] px-[20.5%] lg:px-[6%] md:px-[3%]"
+    class="w-full h-auto mt-[55px] mb-[25px] px-[20.5%] lg:px-[10%] md:px-[5%]"
   >
     <div class="intro mt-[30px] mb-[60px] md:mb-[30px] h-auto">
       <h1

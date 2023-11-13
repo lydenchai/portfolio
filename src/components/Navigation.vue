@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar" class="h-[55px] px-[4%] py-4 md:px-2% flex w-full">
+  <div id="navbar" class="h-[55px] px-[4%] py-4 md:px-[5%] flex w-full">
     <div class="flex justify-between">
       <li class="flex items-center">
         <RouterLink to="#"> Lyden CHAI </RouterLink>
