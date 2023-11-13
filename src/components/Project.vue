@@ -1,36 +1,43 @@
 <template>
   <div class="w-full h-auto">
     <div class="img-container relative">
-      <img :src="project.image" alt="" class="image" />
+      <img :src="project?.image" alt="" class="image" />
       <div class="overlay">
         <div class="text">
           <h1>{{ project?.details?.title }}</h1>
-          <p>{{ project?.details.description }}</p>
+          <p>{{ project?.details?.description }}</p>
         </div>
       </div>
     </div>
     <div class="flex items-center mt-[15px] md:flex-col md:items-start">
-      <h2 class="heading-project md:mb-2">{{ project.name }}</h2>
+      <h2 class="heading-project md:mb-2">{{ project?.name }}</h2>
       <p class="tag-for-projects mt-[3px] ml-[20px] md:ml-0">
-        {{ project.description }}
+        {{ project?.description }}
       </p>
     </div>
   </div>
 </template>
 <script setup lang="ts">
+import type { PropType } from "vue";
+
+defineProps({
+  project: {
+    type: Object as PropType<Project>,
+    required: true,
+  },
+});
+
 interface Project {
   name: string;
   description: string;
   details?: Details;
   image: any;
 }
+
 interface Details {
   title: string;
   description: string;
 }
-const props = defineProps<{
-  project: Project;
-}>();
 </script>
 <style lang="scss" scoped>
 .heading-project {
