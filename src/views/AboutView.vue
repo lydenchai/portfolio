@@ -2,9 +2,9 @@
   <div class="w-full text-[#444444]">
     <div class="w-full h-[100vh] md:h-auto flex justify-between items-center">
       <div
-        class="w-full flex md:mt-[55px] sm:mt-[80px] md:mb-[50px] px-[20.5%] lg:px-[10%] md:px-[5%]"
+        class="w-full flex sm:flex-col md:mt-[55px] sm:mt-[80px] md:mb-[50px] px-[20.5%] lg:px-[10%] md:px-[5%]"
       >
-        <div class="w-[40%]">
+        <div class="w-[40%] sm:hidden">
           <img src="../assets/imgs/Photos.jpg" alt="Avatar" class="w-[80%]" />
         </div>
         <div class="w-[60%] sm:w-[100%]">
