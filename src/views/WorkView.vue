@@ -96,13 +96,16 @@
 
 <script setup lang="ts">
 import Footer from "../components/Footer.vue";
+import Project from "../components/Project.vue";
+
 const projects: any[] = [
   {
     name: "Rental Management System",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
     details: {
-      title: "title",
+      title:
+        "lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
       description: "description",
     },
     image: "",
