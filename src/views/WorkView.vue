@@ -4,30 +4,32 @@
   >
     <div class="intro mt-[30px] mb-[60px] md:mb-[30px] h-auto">
       <h1
-        class="text-block-for-intro text-[28px] md:text-[18px] sm:text-[16px] leading-[55px] md:leading-[40px] sm:leading-[30px] w-full"
+        class="text-block-for-intro text-[24px] md:text-[20px] sm:text-[18px] leading-[55px] md:leading-[40px] sm:leading-[30px] w-full"
       >
-        Hello! I am a
+        Hello! I'm a
         <span class="text-[#416bd8] font-bold">Front End Developer</span> who
-        enjoys crafting experiences that empower users. I am now working at
+        takes pleasure in creating user-friendly experiences. I currently work
+        with the front-end team at
         <a href="https://www.intechdevkh.com/" target="_blank">
-          <span class="text-[#416bd8] font-bold cursor-pointer">IntechDev</span>
+          <span class="text-[#416bd8] font-bold cursor-pointer"
+            >IntechDev Co., LTD.</span
+          >
         </a>
-        front end team
       </h1>
       <h3
         class="text-block-for-intro02 mt-[20px] md:mt-[10px] md:text-[16px] sm:text-[14px]"
       >
-        Bachelor's degree in Computer Science at
+        I hold a Bachelor's degree in Computer Science from
         <a href="https://www.aeu.edu.kh/" target="_blank">
           <span class="text-[#416bd8] font-bold cursor-pointer">
-            Asia Euro University
+            Asia Euro University.
           </span>
         </a>
       </h3>
       <h3
         class="text-block-for-intro02 mt-[20px] md:mt-[10px] md:text-[16px] sm:text-[14px]"
       >
-        I previously internship at
+        Prior to this, I had an internship at
         <a href="https://poscardigital.com/" target="_blank">
           <span class="text-[#416bd8] font-bold cursor-pointer">
             POSCAR Digital Co., LTD.
@@ -73,9 +75,9 @@
       >
         <Project :project="project" />
       </div>
-      <div class="w-full h-auto mt-[50px]">
+      <div class="w-full h-auto mt-[50px] md:mt-[30px]">
         <h1
-          class="other-project-title mb-[25px] md:mb-[15px] text-[32px] md:text-[24px]"
+          class="other-project-title mb-[25px] md:mb-[15px] text-[24px] md:text-[20px] sm:text-[18px]"
         >
           Other Projects
         </h1>
@@ -95,8 +97,8 @@
 </template>
 
 <script setup lang="ts">
-import Footer from "../components/Footer.vue";
 import Project from "../components/Project.vue";
+import Footer from "../components/Footer.vue";
 
 const projects: any[] = [
   {
@@ -108,7 +110,7 @@ const projects: any[] = [
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
       description: "description",
     },
-    image: "",
+    image: "https://bontub.com/bg-hero.png",
   },
   {
     name: "KAS-PORTAL",
@@ -130,10 +132,20 @@ const projects: any[] = [
     },
     image: "",
   },
+  {
+    name: "Travona mini app",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
+    details: {
+      title: "title",
+      description: "description",
+    },
+    image: "",
+  },
 ];
 const otherProjects: any[] = [
   {
-    name: "Travona mini app",
+    name: "Sabay News Clone",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
     details: {

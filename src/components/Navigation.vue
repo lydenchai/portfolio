@@ -2,18 +2,32 @@
   <div id="navbar" class="h-[55px] px-[4%] py-4 md:px-[5%] flex w-full">
     <div class="flex justify-between">
       <li class="flex items-center">
-        <RouterLink to="#" class="text-[14px]"> Lyden CHAI </RouterLink>
+        <RouterLink
+          to="#"
+          class="text-[14px] font-bold"
+          @click.native="scrollToTop"
+        >
+          Lyden CHAI
+        </RouterLink>
       </li>
       <ul class="flex gap-5">
         <li class="h-full grid items-center">
-          <RouterLink to="/" class="text-[14px]"> Works </RouterLink>
+          <RouterLink to="/" class="text-[14px]" @click.native="scrollToTop">
+            Works
+          </RouterLink>
         </li>
         <li class="h-full grid items-center">
-          <RouterLink to="/about" class="text-[14px]"> About </RouterLink>
+          <RouterLink
+            to="/about"
+            class="text-[14px]"
+            @click.native="scrollToTop"
+          >
+            About
+          </RouterLink>
         </li>
         <li class="h-full grid items-center">
           <a
-            href="resume.pdf"
+            href="../resume.pdf"
             onclick="window.location.href('resume.pdf');"
             class="text-[14px]"
           >
@@ -26,8 +40,7 @@
 </template>
 
 <script setup>
-var prevScrollpos = window.pageYOffset;
-let prevScrollPos = window.pageYOffset;
+var prevScrollPos = window.pageYOffset;
 window.addEventListener("scroll", function () {
   let currentScrollPos = window.pageYOffset;
   let navbar = document.getElementById("navbar");
@@ -38,6 +51,9 @@ window.addEventListener("scroll", function () {
   }
   prevScrollPos = currentScrollPos;
 });
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
 </script>
 
 <style lang="scss" scoped>

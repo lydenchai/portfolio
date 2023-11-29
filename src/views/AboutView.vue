@@ -1,36 +1,43 @@
 <template>
   <div class="w-full text-[#444444]">
-    <div class="w-full h-[100vh] md:h-auto flex justify-between items-center">
+    <div
+      class="w-full h-[100vh] md:h-auto sm:h-[50vh] flex justify-between items-center"
+    >
       <div
         class="w-full flex sm:flex-col md:mt-[55px] sm:mt-[80px] md:mb-[50px] px-[20.5%] lg:px-[10%] md:px-[5%]"
       >
-        <div class="w-[40%] sm:hidden">
-          <img src="../assets/imgs/Photos.jpg" alt="Avatar" class="w-[80%]" />
+        <div class="w-[40%] h-auto sm:hidden">
+          <img
+            src="../assets/imgs/Photo.jpg"
+            alt="Image not found"
+            class="w-[80%] md:w-[90%] h-auto"
+          />
         </div>
         <div class="w-[60%] sm:w-[100%]">
           <p
             class="letter-spacing-[0.3px] tracking-wide md:text-[16px] sm:text-[14px]"
           >
-            Hi, I'm <span class="text-[#416bd8] font-bold">Lyden CHAI</span>,
-            and I'm studying at
+            Hello there! My name is
+            <span class="text-[#416bd8] font-bold">Lyden CHAI</span>, and I am
+            currently pursuing a Bachelor's degree in Computer Science at
             <a href="https://www.aeu.edu.kh/" target="_blank">
               <span class="text-[#416bd8] font-bold cursor-pointer">
                 Asia Euro University
-              </span>
-            </a>
-            with a Bachelor's degree in Computer Science. My interests are in
-            Front End Engineering, and I love to create beautiful and performant
-            products with delightful user experiences.
+              </span> </a
+            >. I have a keen interest in Front End Engineering and thoroughly
+            enjoy crafting visually appealing and high-performing products that
+            provide an exceptional user experience.
           </p>
           <p class="mt-[30px] tracking-wide md:text-[16px] sm:text-[14px]">
-            I'm interested in the Front End Engineer role at
+            I am excited about the opportunity to work as a Front End Engineer
+            at
             <a href="https://www.intechdevkh.com/" target="_blank">
               <span class="text-[#416bd8] font-bold cursor-pointer">
                 IntechDev
               </span>
             </a>
-            because I like working in this ridesharing space and creating
-            products to improve the lives of users.
+            because I am keen on working in the ridesharing industry and
+            building products that enhance the lives of users.
           </p>
           <p class="mt-[30px] tracking-wide md:text-[16px] sm:text-[14px]">
             When I am not developing projects, I love gardening, reading,
@@ -45,71 +52,71 @@
     >
       <div class="experience-box">
         <h2
-          class="heading-3 text-[22px] mb-[10px] md:mb-[5px] md:text-[18px] font-bold"
+          class="heading-3 text-[22px] mb-[10px] md:mb-[5px] md:text-[16px] font-bold"
         >
           education
         </h2>
         <div class="experience-items bar h-[2px] sm:h-[1px]"></div>
         <div class="experience-items flex sm:flex-col mt-[20px] md:mt-[10px]">
-          <div class="experience-text sm:text-[15px] font-medium">
+          <div class="experience-text md:text-[14px] font-medium">
             Bachelor's Degree in Computer Science
           </div>
           <a href="https://www.aeu.edu.kh/">
-            <div class="experience-text smaller text-[15px] sm:text-[12px]">
+            <div class="experience-text smaller text-[14px] sm:text-[12px]">
               Asia Euro University
             </div>
           </a>
         </div>
-        <div class="experience-text smaller text-[15px] sm:text-[12px]">
+        <div class="experience-text smaller text-[14px] sm:text-[12px]">
           October 2023 - Present
         </div>
         <div class="experience-items flex sm:flex-col mt-[20px] md:mt-[10px]">
-          <div class="experience-text sm:text-[15px] font-medium">
+          <div class="experience-text md:text-[14px] font-medium">
             Associate's Degree in Information Technology
           </div>
           <a
             href="https://www.passerellesnumeriques.org/en/our-actions/cambodia/"
           >
-            <div class="experience-text smaller text-[15px] sm:text-[12px]">
+            <div class="experience-text smaller text-[14px] sm:text-[12px]">
               Passerelles Numeriques Cambodia
             </div>
           </a>
         </div>
-        <div class="experience-text smaller text-[15px] sm:text-[12px]">
+        <div class="experience-text smaller text-[14px] sm:text-[12px]">
           October 2019 - October 2021
         </div>
       </div>
       <div class="experience-box mt-[60px] md:mt-[50px] sm:mt-[30px]">
         <h2
-          class="heading-3 text-[22px] mb-[10px] md:mb-[5px] md:text-[18px] font-bold"
+          class="heading-3 text-[22px] mb-[10px] md:mb-[5px] md:text-[16px] font-bold"
         >
           experience
         </h2>
         <div class="experience-items bar h-[2px] sm:h-[1px]"></div>
         <div class="experience-items flex sm:flex-col mt-[20px] md:mt-[10px]">
-          <div class="experience-text sm:text-[15px] font-medium">
+          <div class="experience-text md:text-[14px] font-medium">
             Front End Developer
           </div>
           <a href="https://www.intechdevkh.com/">
-            <div class="experience-text smaller text-[15px] sm:text-[12px]">
+            <div class="experience-text smaller text-[14px] sm:text-[12px]">
               IntechDev Co., LTD.
             </div>
           </a>
         </div>
-        <div class="experience-text smaller text-[15px] sm:text-[12px]">
+        <div class="experience-text smaller text-[14px] sm:text-[12px]">
           June 2022 - Present
         </div>
         <div class="experience-items flex sm:flex-col mt-[20px]">
-          <div class="experience-text sm:text-[15px] font-medium">
+          <div class="experience-text md:text-[14px] font-medium">
             Web Developer Intern
           </div>
           <a href="https://poscardigital.com/">
-            <div class="experience-text smaller text-[15px] sm:text-[12px]">
+            <div class="experience-text smaller text-[14px] sm:text-[12px]">
               POSCAR Digital Co., LTD.
             </div>
           </a>
         </div>
-        <div class="experience-text smaller text-[15px] sm:text-[12px]">
+        <div class="experience-text smaller text-[14px] sm:text-[12px]">
           January 2022 - May 2022
         </div>
       </div>

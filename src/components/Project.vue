@@ -8,20 +8,18 @@
       />
       <div class="overlay">
         <div class="text">
-          <h1 class="">{{ project?.details?.title }}</h1>
+          <h1 class="leading-tight">{{ project?.details?.title }}</h1>
           <p class="">{{ project?.details?.description }}</p>
         </div>
       </div>
     </div>
     <div class="flex items-center mt-[15px] md:flex-col md:items-start">
       <h2
-        class="heading-project text-[20px] md:text-[18px] sm:text-[15px] font-medium md:mb-2"
+        class="heading-project text-[20px] md:text-[16px] sm:text-[14px] font-medium md:mb-2"
       >
         {{ project?.name }}
       </h2>
-      <p
-        class="tag-for-projects mt-[3px] ml-[20px] md:ml-0 text-[15px] sm:text-[12px]"
-      >
+      <p class="tag-for-projects mt-[3px] ml-[20px] md:ml-0 text-[14px]">
         {{ project?.description }}
       </p>
     </div>
@@ -65,7 +63,8 @@ interface Details {
 
 .image {
   display: block;
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
