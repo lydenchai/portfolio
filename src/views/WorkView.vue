@@ -1,19 +1,19 @@
 <template>
   <div
-    class="w-full h-auto mt-[55px] sm:mt-[80px] mb-[25px] px-[20.5%] lg:px-[10%] md:px-[5%]"
+    class="mb-[25px] mt-[55px] h-auto w-full px-[20.5%] lg:px-[10%] md:px-[5%] sm:mt-[80px]"
   >
-    <div class="intro mt-[30px] mb-[60px] md:mb-[30px] h-auto">
+    <div class="intro mb-[60px] mt-[30px] h-auto md:mb-[30px]">
       <h1
-        class="text-block-for-intro text-[24px] md:text-[20px] sm:text-[18px] leading-[55px] md:leading-[40px] sm:leading-[30px] w-full"
+        class="text-block-for-intro w-full text-[24px] leading-[55px] md:text-[20px] md:leading-[40px] sm:text-[18px] sm:leading-[30px]"
       >
         Hello! I'm a
-        <span class="text-[#416bd8] font-bold">Front End Developer</span> who
+        <span class="font-bold text-[#416bd8]">Front End Developer</span> who
         takes pleasure in creating user-friendly experiences. I currently work
         with the front-end team at
         <a href="https://www.intechdevkh.com/" target="_blank">
-          <span class="text-[#416bd8] font-bold cursor-pointer"
-            >IntechDev Co., LTD.</span
-          >
+          <span class="cursor-pointer font-bold text-[#416bd8]">
+            IntechDev Co., LTD.
+          </span>
         </a>
       </h1>
       <h3
@@ -21,7 +21,7 @@
       >
         I hold a Bachelor's degree in Computer Science from
         <a href="https://www.aeu.edu.kh/" target="_blank">
-          <span class="text-[#416bd8] font-bold cursor-pointer">
+          <span class="cursor-pointer font-bold text-[#416bd8]">
             Asia Euro University.
           </span>
         </a>
@@ -31,12 +31,12 @@
       >
         Prior to this, I had an internship at
         <a href="https://poscardigital.com/" target="_blank">
-          <span class="text-[#416bd8] font-bold cursor-pointer">
+          <span class="cursor-pointer font-bold text-[#416bd8]">
             POSCAR Digital Co., LTD.
           </span>
         </a>
       </h3>
-      <div class="mt-[50px] md:mt-[30px] flex items-center gap-4">
+      <div class="mt-[50px] flex items-center gap-4 md:mt-[30px]">
         <a href="mailto:lyden.chai@gmail.com" target="_blank">
           <img
             src="https://uploads-ssl.webflow.com/611e891b6b88d2aae555b967/6222197c3b4bae024f0b223e_01%20mail%202x.png"
@@ -69,20 +69,20 @@
     </div>
     <div class="projects">
       <div
-        class="w-full h-auto mt-[50px] md:mt-[30px]"
+        class="mt-[50px] h-auto w-full md:mt-[30px]"
         v-for="project in projects"
         :key="project"
       >
         <Project :project="project" />
       </div>
-      <div class="w-full h-auto mt-[50px] md:mt-[30px]">
+      <div class="mt-[50px] h-auto w-full md:mt-[30px]">
         <h1
-          class="other-project-title mb-[25px] md:mb-[15px] text-[24px] md:text-[20px] sm:text-[18px]"
+          class="other-project-title mb-[25px] text-[24px] md:mb-[15px] md:text-[20px] sm:text-[18px]"
         >
           Other Projects
         </h1>
         <div
-          class="w-full h-auto md:mt-[15px] mb-[50px]"
+          class="mb-[50px] h-auto w-full md:mt-[15px]"
           v-for="project in otherProjects"
           :key="project"
         >
@@ -90,7 +90,7 @@
         </div>
       </div>
     </div>
-    <div class="footer w-full h-auto">
+    <div class="footer h-auto w-full">
       <Footer />
     </div>
   </div>

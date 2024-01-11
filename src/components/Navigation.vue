@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar" class="h-[55px] px-[4%] py-4 md:px-[5%] flex w-full">
+  <div id="navbar" class="flex h-[55px] w-full px-[4%] py-4 md:px-[5%]">
     <div class="flex justify-between">
       <li class="flex items-center">
         <RouterLink
@@ -11,12 +11,12 @@
         </RouterLink>
       </li>
       <ul class="flex gap-5">
-        <li class="h-full grid items-center">
+        <li class="grid h-full items-center">
           <RouterLink to="/" class="text-[14px]" @click.native="scrollToTop">
             Works
           </RouterLink>
         </li>
-        <li class="h-full grid items-center">
+        <li class="grid h-full items-center">
           <RouterLink
             to="/about"
             class="text-[14px]"
@@ -25,7 +25,7 @@
             About
           </RouterLink>
         </li>
-        <li class="h-full grid items-center">
+        <li class="grid h-full items-center">
           <a
             href="../resume.pdf"
             onclick="window.location.href('resume.pdf');"

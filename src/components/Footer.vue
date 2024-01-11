@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-between w-full mt-[50px] pt-[25px]"
+    class="mt-[50px] flex w-full justify-between pt-[25px]"
     style="border-top: 2px solid #b1b1b1"
   >
     <a href="#">

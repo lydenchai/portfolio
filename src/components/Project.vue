@@ -1,10 +1,10 @@
 <template>
-  <div class="w-full h-auto">
+  <div class="h-auto w-full">
     <div class="img-container relative">
       <img
         :src="project?.image"
         alt=""
-        class="image w-full h-[400px] md:h-[300px]"
+        class="image h-[400px] w-full md:h-[300px]"
       />
       <div class="overlay">
         <div class="text">
@@ -13,13 +13,13 @@
         </div>
       </div>
     </div>
-    <div class="flex items-center mt-[15px] md:flex-col md:items-start">
+    <div class="mt-[15px] flex items-center md:flex-col md:items-start">
       <h2
-        class="heading-project text-[20px] md:text-[16px] sm:text-[14px] font-medium md:mb-2"
+        class="heading-project text-[20px] font-medium md:mb-2 md:text-[16px] sm:text-[14px]"
       >
         {{ project?.name }}
       </h2>
-      <p class="tag-for-projects mt-[3px] ml-[20px] md:ml-0 text-[14px]">
+      <p class="tag-for-projects ml-[20px] mt-[3px] text-[14px] md:ml-0">
         {{ project?.description }}
       </p>
     </div>
@@ -65,7 +65,9 @@ interface Details {
   display: block;
   width: 100%;
   object-fit: contain;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .overlay {
