@@ -12,6 +12,7 @@
     "moment": "^2.29.4",
     "vue": "^3.2.47",
     "vue-moment": "^4.1.0",
+    "vue-pdf": "^4.3.0",
     "vue-router": "^4.2.1"
   },
   "devDependencies": {

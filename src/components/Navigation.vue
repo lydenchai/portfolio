@@ -31,8 +31,8 @@
         </li>
         <li class="grid h-full items-center">
           <a
-            href="resume.pdf"
-            onclick="window.location.href('resume.pdf');"
+            href="../resume.pdf"
+            onclick="window.location.href('../resume.pdf');"
             class="text-[15px] sm:text-[14px]"
           >
             Resume
