@@ -1,6 +1,6 @@
 <template>
   <div class="w-full text-[#444444]">
-    <div class="flex h-[100vh] w-full items-center justify-between md:h-[40vh]">
+    <div class="flex h-[100vh] w-full items-center justify-between md:h-[55vh]">
       <div
         class="flex w-full px-[20.5%] lg:px-[10%] md:mb-[50px] md:mt-[55px] md:px-[5%] sm:mt-[80px] sm:flex-col"
       >
