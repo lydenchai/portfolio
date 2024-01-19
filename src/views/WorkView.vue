@@ -1,25 +1,27 @@
 <template>
-  <div
-    class="mb-[25px] mt-[55px] h-auto w-full px-[20.5%] lg:px-[10%] md:px-[5%] sm:mt-[80px]"
-  >
-    <div class="intro mb-[60px] mt-[30px] h-auto md:mb-[30px]">
+  <div class="mb-[25px] h-auto w-full px-[20.5%] lg:px-[10%] md:px-[5%]">
+    <div class="intro mt-[120px] h-auto md:mt-[80px]">
       <h1
-        class="text-block-for-intro w-full text-[24px] leading-[55px] md:text-[20px] md:leading-[40px] sm:text-[18px] sm:leading-[30px]"
+        class="text-block-for-intro w-full text-[22px] leading-[50px] md:text-[18px] md:leading-[40px] sm:leading-[30px]"
       >
-        Hello! I'm a
-        <span class="font-bold text-[#416bd8]">Front End Developer</span> who
-        takes pleasure in creating user-friendly experiences. I currently work
-        with the front-end team at
-        <a href="https://www.intechdevkh.com/" target="_blank">
+        Hey there! I'm a
+        <span class="font-bold text-[#416bd8]">Junior Frontend Developer</span>
+        passionate about crafting seamless user experiences. My focus is on
+        bringing designs to life in the browser. Excited to contribute my energy
+        and creativity to the dynamic world of web development. Currently with
+        the front-end team at
+        <a href="https://optistech.com/" target="_blank">
           <span class="cursor-pointer font-bold text-[#416bd8]">
-            IntechDev Co., LTD.
+            Optistech Co., LTD.
           </span>
         </a>
+        <br />
+        Let's build something great!
       </h1>
       <h3
         class="text-block-for-intro02 mt-[20px] md:mt-[10px] md:text-[16px] sm:text-[14px]"
       >
-        I hold a Bachelor's degree in Computer Science from
+        Bachelor's degree in Computer Science at
         <a href="https://www.aeu.edu.kh/" target="_blank">
           <span class="cursor-pointer font-bold text-[#416bd8]">
             Asia Euro University.
@@ -29,7 +31,7 @@
       <h3
         class="text-block-for-intro02 mt-[20px] md:mt-[10px] md:text-[16px] sm:text-[14px]"
       >
-        Prior to this, I had an internship at
+        Previously at
         <a href="https://poscardigital.com/" target="_blank">
           <span class="cursor-pointer font-bold text-[#416bd8]">
             POSCAR Digital Co., LTD.
@@ -117,8 +119,8 @@ const projects: any[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
     details: {
-      title: "title",
-      description: "description",
+      title: "",
+      description: "",
     },
     image: "",
   },
@@ -127,8 +129,8 @@ const projects: any[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
     details: {
-      title: "title",
-      description: "description",
+      title: "",
+      description: "",
     },
     image: "",
   },
@@ -137,8 +139,8 @@ const projects: any[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
     details: {
-      title: "title",
-      description: "description",
+      title: "",
+      description: "",
     },
     image: "",
   },
@@ -149,8 +151,8 @@ const otherProjects: any[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit eaque.",
     details: {
-      title: "title",
-      description: "description",
+      title: "",
+      description: "",
     },
     image: "",
   },

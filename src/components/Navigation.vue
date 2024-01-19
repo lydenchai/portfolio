@@ -4,7 +4,7 @@
       <li class="flex items-center">
         <RouterLink
           to="#"
-          class="text-[14px] font-bold"
+          class="text-[15px] font-bold sm:text-[14px]"
           @click.native="scrollToTop"
         >
           Lyden CHAI
@@ -12,14 +12,18 @@
       </li>
       <ul class="flex gap-5">
         <li class="grid h-full items-center">
-          <RouterLink to="/" class="text-[14px]" @click.native="scrollToTop">
+          <RouterLink
+            to="/"
+            class="text-[15px] sm:text-[14px]"
+            @click.native="scrollToTop"
+          >
             Works
           </RouterLink>
         </li>
         <li class="grid h-full items-center">
           <RouterLink
             to="/about"
-            class="text-[14px]"
+            class="text-[15px] sm:text-[14px]"
             @click.native="scrollToTop"
           >
             About
@@ -27,9 +31,9 @@
         </li>
         <li class="grid h-full items-center">
           <a
-            href="../resume.pdf"
+            href="resume.pdf"
             onclick="window.location.href('resume.pdf');"
-            class="text-[14px]"
+            class="text-[15px] sm:text-[14px]"
           >
             Resume
           </a>
