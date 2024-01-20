@@ -31,14 +31,15 @@
   </div>
 </template>
 
-<script setup>
-import { ref, reactive, getCurrentInstance, onMounted } from "vue";
+<script setup lang="ts">
+import type { PropType } from "vue";
 
-const _this = getCurrentInstance().proxy;
-
-const props = defineProps({});
-
-const emits = defineEmits();
+defineProps({
+  project: {
+    type: Object as PropType<any>,
+    required: true,
+  },
+});
 </script>
 
 <style scoped lang="scss">
