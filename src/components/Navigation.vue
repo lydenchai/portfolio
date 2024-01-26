@@ -1,54 +1,92 @@
 <template>
-  <div class="text-2xl w-full">
-    <van-sticky>
-      <nav
-        id="menu"
-        class="navbar navbar-inverse navbar-static-top h-[40px] bg-[#9b939467] px-[4%] lg:px-[6%] md:px-0% flex items-center justify-between"
-      >
-        <li class="h-full grid items-center">
-          <RouterLink to=""> Lyden CHAI </RouterLink>
+  <div id="navbar" class="flex h-[55px] w-full px-[4%] py-4 md:px-[5%]">
+    <div class="flex justify-between">
+      <li class="flex items-center">
+        <RouterLink
+          to="#"
+          class="text-[15px] font-bold sm:text-[14px]"
+          @click.native="scrollToTop"
+        >
+          Lyden CHAI
+        </RouterLink>
+      </li>
+      <ul class="flex gap-5">
+        <li class="grid h-full items-center">
+          <RouterLink
+            to="/"
+            class="text-[15px] sm:text-[14px]"
+            @click.native="scrollToTop"
+          >
+            Works
+          </RouterLink>
         </li>
-        <ul class="h-full">
-          <li class="h-full grid items-center">
-            <RouterLink to="/"> Works </RouterLink>
-          </li>
-          <li id="entertainment" class="category">
-            <RouterLink to="/about" class="font-semibold"> About </RouterLink>
-          </li>
-          <li id="entertainment" class="category">
-            <RouterLink to="/resume" class="font-semibold"> Resume </RouterLink>
-          </li>
-        </ul>
-      </nav>
-    </van-sticky>
+        <li class="grid h-full items-center">
+          <RouterLink
+            to="/about"
+            class="text-[15px] sm:text-[14px]"
+            @click.native="scrollToTop"
+          >
+            About
+          </RouterLink>
+        </li>
+        <li class="grid h-full items-center">
+          <a
+            href="../resume.pdf"
+            onclick="window.location.href('../resume.pdf');"
+            class="text-[15px] sm:text-[14px]"
+          >
+            Resume
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup>
+var prevScrollPos = window.pageYOffset;
+window.addEventListener("scroll", function () {
+  let currentScrollPos = window.pageYOffset;
+  let navbar = document.getElementById("navbar");
+  if (prevScrollPos > currentScrollPos) {
+    navbar.style.top = "0px";
+  } else {
+    navbar.style.top = "-55px";
+  }
+  prevScrollPos = currentScrollPos;
+});
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+</script>
 
 <style lang="scss" scoped>
-a.router-link-exact-active {
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-
-a:hover {
-  color: #fff;
-  transition: 0.3s;
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.5s;
+  box-shadow: none;
+  backdrop-filter: blur(10px);
+  z-index: 99;
 }
 
 ul > li > a {
-  height: 40px;
-  font-size: 14px;
-  padding: 5px 13px;
-  position: relative;
-  text-decoration: none;
-  display: grid;
-  place-items: center;
-  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  color: #676767;
+  line-height: 2px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
-nav > ul > li {
-  float: left;
+ul > li > a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+ul > li > a:active,
+ul > li > a:hover {
+  outline: 0;
 }
 </style>

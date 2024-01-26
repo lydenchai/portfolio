@@ -1,5 +1,5 @@
 {
-  "name": "sabay-news",
+  "name": "Lyden CHAI's Portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,9 @@
   },
   "dependencies": {
     "moment": "^2.29.4",
-    "pinia": "^2.1.3",
-    "vant": "^4.4.0",
     "vue": "^3.2.47",
     "vue-moment": "^4.1.0",
+    "vue-pdf": "^4.3.0",
     "vue-router": "^4.2.1"
   },
   "devDependencies": {
@@ -21,6 +20,8 @@
     "@vitejs/plugin-vue": "^4.1.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.0",
     "tailwindcss": "^3.3.2",
@@ -28,5 +29,10 @@
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.3.2",
     "vue-tsc": "^1.4.2"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
   }
 }

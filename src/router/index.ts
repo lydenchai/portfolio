@@ -4,7 +4,6 @@ import AboutView from "../views/AboutView.vue";
 
 const router = createRouter({
   history: createWebHistory(),
-  // history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
@@ -16,10 +15,5 @@ const router = createRouter({
     },
   ],
 });
-
-// router.beforeEach((to, from, next) => {
-//   document.title = `${to.name}`;
-//   next();
-// });
 
 export default router;
