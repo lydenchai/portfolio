@@ -10,9 +10,9 @@
         bringing designs to life in the browser. Excited to contribute my energy
         and creativity to the dynamic world of web development. Currently with
         the front-end team at
-        <a href="https://optistech.com/" target="_blank">
+        <a href="https://www.intechdevkh.com/" target="_blank">
           <span class="cursor-pointer font-bold text-[#416bd8]">
-            Optistech Co., LTD.
+            IntechDev Co., LTD.
           </span>
         </a>
         <br />

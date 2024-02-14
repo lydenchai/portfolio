@@ -44,9 +44,9 @@
       <div class="experience-text font-medium md:text-[14px]">
         Junior Frontend Developer
       </div>
-      <a href="https://optistech.com/">
+      <a href="https://www.intechdevkh.com/">
         <div class="experience-text smaller text-[14px] sm:text-[12px]">
-          Optistech Co., LTD.
+          IntechDev Co., LTD.
         </div>
       </a>
     </div>
