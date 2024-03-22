@@ -32,9 +32,9 @@
     <div
       class="h-auto w-full bg-[#dadada] px-[20.5%] py-[60px] lg:px-[10%] md:px-[5%]"
     >
-      <Experiences />
-      <TrainingCourse />
-      <Interest />
+      <Experiences :project="project" />
+      <TrainingCourse :project="project" />
+      <Interest :project="project" />
     </div>
   </div>
 </template>
@@ -43,6 +43,8 @@
 import Experiences from "../components/Experience.vue";
 import TrainingCourse from "../components/Training-Course.vue";
 import Interest from "../components/Interest.vue";
+
+const project = {};
 </script>
 
 <style lang="scss" scoped></style>
