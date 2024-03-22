@@ -35,7 +35,7 @@
 import type { PropType } from "vue";
 
 defineProps({
-  project: {
+  interest: {
     type: Object as PropType<any>,
     required: true,
   },

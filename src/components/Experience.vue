@@ -106,7 +106,7 @@
 import type { PropType } from "vue";
 
 defineProps({
-  project: {
+  experience: {
     type: Object as PropType<any>,
     required: true,
   },

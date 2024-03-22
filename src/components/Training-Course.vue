@@ -26,7 +26,7 @@
 import type { PropType } from "vue";
 
 defineProps({
-  project: {
+  trainingCourse: {
     type: Object as PropType<any>,
     required: true,
   },
