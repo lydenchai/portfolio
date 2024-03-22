@@ -5,7 +5,7 @@
         class="text-block-for-intro w-full text-[22px] leading-[50px] md:text-[18px] md:leading-[40px] sm:leading-[30px]"
       >
         Hey there! I'm a
-        <span class="font-bold text-[#416bd8]">Junior Frontend Developer</span>
+        <span class="font-bold text-[#416bd8]">Frontend Developer</span>
         passionate about crafting seamless user experiences. My focus is on
         bringing designs to life in the browser. Excited to contribute my energy
         and creativity to the dynamic world of web development. Currently with

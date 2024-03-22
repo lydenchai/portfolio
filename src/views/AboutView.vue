@@ -6,9 +6,9 @@
       >
         <div class="h-auto w-[40%] sm:hidden">
           <img
-            src="../assets/imgs/Photo.jpg"
+            src="../assets/imgs/my-photo.jpeg"
             alt="Image not found"
-            class="h-auto w-[80%] md:w-[90%]"
+            class="h-auto w-[80%] rounded-md md:w-[90%]"
           />
         </div>
         <div class="w-[60%] sm:w-[100%]">
