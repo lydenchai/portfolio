@@ -42,7 +42,7 @@
     <div class="experience-items bar h-[2px] sm:h-[1px]"></div>
     <div class="experience-items mt-[20px] flex md:mt-[10px] sm:flex-col">
       <div class="experience-text font-medium md:text-[14px]">
-        Junior Frontend Developer
+        Frontend Developer
       </div>
       <a href="https://www.intechdevkh.com/">
         <div class="experience-text smaller text-[14px] sm:text-[12px]">
